@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 require("dotenv").config();
 
-//const uri = process.env.MONGO_DB_URL;
-const uri = "mongodb+srv://root:1234@cluster0.vpgmo31.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = process.env.MONGO_DB_URL;
+//const uri = "mongodb+srv://root:1234@cluster0.vpgmo31.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 const connectDB = async () => {
   try {
     await mongoose.connect(uri);
