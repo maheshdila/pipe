@@ -26,5 +26,6 @@ app.use(errorHandler);
 // Listen to the server and connect to the database
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
+  console.log(`Hi huthhtooo`);
   connectDB();
 });
